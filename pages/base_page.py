@@ -23,6 +23,10 @@ class BasePage():
         except (NoSuchElementException):
             return False
         return True  
+
+    def switch_to_new_window(self):
+        new_window = self.browser.window_handles[1]
+        self.browser.switch_to.window(new_window)
     
 '''     def is_not_element_present(self, how, what, timeout=4):
         try:
