@@ -1,3 +1,4 @@
+from .pages.base_page import BasePage
 from .pages.main_page import MainPage
 from .pages.minister_page import MinisterPage
 from .pages.news_page import NewsPage
@@ -10,14 +11,14 @@ import time
 @pytest.mark.saniti
 def test_header(browser):
     link = "https://xn--b1aew.xn--p1ai/"
-    page = MainPage(browser, link)
+    page = BasePage(browser, link)
     page.open()
     page.should_be_header()
 
 @pytest.mark.saniti
 def test_main_menu(browser):
     link = "https://xn--b1aew.xn--p1ai/"
-    page = MainPage(browser, link)
+    page = BasePage(browser, link)
     page.open()
     page.should_be_main_menu()
     page = MinisterPage(browser, browser.current_url)
@@ -35,7 +36,7 @@ def test_news_section(browser):
 @pytest.mark.saniti
 def test_services_section(browser):
     link = "https://xn--b1aew.xn--p1ai/"
-    page = MainPage(browser, link)
+    page = BasePage(browser, link)
     page.open()
     page.should_be_services_section()
     page = ServicesPage(browser, browser.current_url)
@@ -77,20 +78,20 @@ def test_speach_section(browser):
 @pytest.mark.xfail
 def test_state_authorities_sites_section(browser):
     link = "https://xn--b1aew.xn--p1ai/"
-    page = MainPage(browser, link)
+    page = BasePage(browser, link)
     page.open()
     page.shoul_be_state_authorities_sites_section()
 
 @pytest.mark.saniti
 def test_resources_section(browser):
     link = "https://xn--b1aew.xn--p1ai/"
-    page = MainPage(browser, link)
+    page = BasePage(browser, link)
     page.open()
     page.should_be_resources_section()
 
 @pytest.mark.saniti
 def test_footer(browser):
     link = "https://xn--b1aew.xn--p1ai/"
-    page = MainPage(browser, link)
+    page = BasePage(browser, link)
     page.open()
     page.should_be_footer()

@@ -25,8 +25,17 @@ class MainPageLocators():
     SITE_MAP_LINK = (By.CSS_SELECTOR, "#link-2")
     SITE_MAP_OPEN = (By.CSS_SELECTOR, "#block-m")
 
-
 class MainMenuLocators():
     MAIN_MENU_OPENED = (By.CSS_SELECTOR, ".selected.active")
     MAIN_MENU_MINISTER_LINK = (By.CSS_SELECTOR, ".bm-cell.active ul li:nth-child(1) a")
     MAIN_MENU_ALL_SERVICE_LINK = (By.CSS_SELECTOR, ".bm-cell.active ul li:nth-child(1) a")
+
+class AllMediaPageLocators():
+    RADIO_PLAY_BUTTON = (By.CSS_SELECTOR, "#mep_3 .mejs-playpause-button.mejs-play button")
+    RADIO_PAUSE_BUTTON = (By.CSS_SELECTOR, "#mep_3 .mejs-playpause-button.mejs-pause button")
+    VIDEO_NEWS = (By.CSS_SELECTOR, ".slider2-container")
+    VIDEO_WINDOW_PLAY_BUTTON = (By.CSS_SELECTOR, "#mep_0 div.mejs-overlay-button")
+    VIDEO_WINDOW_STOP_BUTTON = (By.CSS_SELECTOR, ".mejs-button.mejs-playpause-button.mejs-pause")
+    WINDOW_FRAME = (By.TAG_NAME, "iframe")
+    AUDIO_PLAY_BUTTON = (By.CSS_SELECTOR, "#mep_0 .mejs-button.mejs-playpause-button.mejs-play")
+    AUDIO_PAUSE_BUTTON = (By.CSS_SELECTOR, "#mep_0 .mejs-button.mejs-playpause-button.mejs-pause")
