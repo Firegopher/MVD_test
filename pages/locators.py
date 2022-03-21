@@ -39,3 +39,25 @@ class AllMediaPageLocators():
     WINDOW_FRAME = (By.TAG_NAME, "iframe")
     AUDIO_PLAY_BUTTON = (By.CSS_SELECTOR, "#mep_0 .mejs-button.mejs-playpause-button.mejs-play")
     AUDIO_PAUSE_BUTTON = (By.CSS_SELECTOR, "#mep_0 .mejs-button.mejs-playpause-button.mejs-pause")
+
+class RequestPageLocators():
+    EXTRA_VALUE = (By.CSS_SELECTOR, ".sl-item:nth-child(25) .radio b")
+    REQUEST_LIST_MVD = (By.CSS_SELECTOR, ".sl-item:nth-child(1) .radio b")
+    PROCEED_BUTTON = (By.CSS_SELECTOR, "form .f-right")
+    CHECKBOX = (By.CSS_SELECTOR, "label.checkbox")
+    APPLY_BUTTON = (By.CSS_SELECTOR, ".f-right button.blue-button")
+    REQUEST_FORM_ADDRESS_TITLE = (By.CSS_SELECTOR, ".bf-item:nth-child(1) .bf-item-title")
+    REQUEST_FORM_SUBDIVISION = (By.CSS_SELECTOR, ".bf-item:nth-child(1) b")
+    REQUEST_FORM_FULL_NAME_FIELD = (By.CSS_SELECTOR, "#mvd")
+    REQUEST_FORM_DECLARANT_TITLE = (By.CSS_SELECTOR, ".bf-item:nth-child(2) .bf-item-title")
+    REQUEST_FORM_CITIZEN_RADIOBUTTON = (By.CSS_SELECTOR, "input[value='0']")
+    REQUEST_FORM_ORGANIZATION_RADIOBUTTON = (By.CSS_SELECTOR, "label input[value='1']")
+    REQUEST_FORM_SURNAME_FIELD = (By.CSS_SELECTOR, "#surname_check")
+    REQUEST_FORM_NAME_FIELD = (By.CSS_SELECTOR, "#firstname_check")
+    REQUEST_FORM_PATRONYMIC_FIELD = (By.CSS_SELECTOR, "input[name='patronymic']")
+    REQUEST_FORM_ANSWER_ADDRESS_TITLE = (By.CSS_SELECTOR, "#answer_type_check")
+    REQUEST_FORM_EMAIL_ADDRESS = (By.CSS_SELECTOR, "#email_check")
+    REQUEST_FORM_TELEPHONE = (By.CSS_SELECTOR, "#phone_check")
+    REQUEST_FORM_LOCATION = (By.CSS_SELECTOR, "#select2-event_region-nu-container")
+
+

@@ -16,10 +16,9 @@ def test_video(browser):
     page.open()
     page.should_work_video()
 
-@pytest.mark.smoke
+@pytest.mark.saniti
 def test_audio(browser):
     link = "https://66.xn--b1aew.xn--p1ai/all_media"
     page = AllMediaPage(browser, link)
     page.open()
     page.should_work_audio()
-    time.sleep(5)
