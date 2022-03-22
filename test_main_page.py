@@ -6,7 +6,6 @@ from .pages.services_page import ServicesPage
 from .pages.quiz_page import QuizPage
 from .pages.media_about_page import MediaAboutPage
 import pytest
-import time
 
 @pytest.mark.saniti
 def test_header(browser):
