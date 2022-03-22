@@ -3,6 +3,7 @@ import pytest
 import time
 
 @pytest.mark.saniti
+@pytest.mark.xfail
 def test_district_module(browser):
     link = "https://mvd.ru/district"
     page = DistrictPage(browser, link)
