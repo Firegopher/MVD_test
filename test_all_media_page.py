@@ -1,6 +1,6 @@
 from mvd.pages.all_media_page import AllMediaPage
 import pytest
-import time
+
 
 @pytest.mark.saniti
 def test_radio(browser):

@@ -65,3 +65,12 @@ class RequestPageLocators():
 class SearchPageLocators():
     SEARCH_RESULT_FILE = (By.XPATH, '//a[contains(@href, "Almanah_Professional")]')
     SEARCH_RESULT_ARTICLE = (By.CSS_SELECTOR, ".search_highlight")
+
+class WantedPageLocators():
+    SURNAME_FIELD = (By.CSS_SELECTOR, "input[name='s_family']")
+    NAME_FIELD = (By.CSS_SELECTOR, "input[name='fio']")
+    BIRTH_YEAR_FIELD = (By.CSS_SELECTOR, "select[name='d_year']")
+    EMAIL_FIELD = (By.CSS_SELECTOR, "input[name='email']")
+    SEARCH_BUTTON = (By.CSS_SELECTOR, "button.type-1.search-attention")
+    CAPTCHA_FIELD = (By.CSS_SELECTOR, "input[name='captcha']")
+    WANTED_SEARCH_RESULT = (By.CSS_SELECTOR, ".bs-item.clearfix .bs-item-title")
