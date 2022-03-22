@@ -1,4 +1,3 @@
-from .pages.base_page import BasePage
 from .pages.request_page import RequestPage
 import pytest
 
@@ -32,7 +31,9 @@ def test_request_list_is_match(browser, position, value):
     page.open()
     page.should_match_request_list(position, value)
 
+
 @pytest.mark.saniti
+@pytest.mark.xfail
 def test_there_is_no_extra_in_requesl_list(browser):
     link = "https://xn--b1aew.xn--p1ai/request_main"
     page = RequestPage(browser, link)
@@ -64,6 +65,7 @@ def test_full_name_field_in_address_block_in_request_form(browser):
     page.should_be_full_name_field_in_address_block_in_request_form()
 
 @pytest.mark.saniti
+@pytest.mark.xfail
 def test_declarant_block_title_in_request_form(browser):
     link = "https://xn--b1aew.xn--p1ai/request_main"
     page = RequestPage(browser, link)

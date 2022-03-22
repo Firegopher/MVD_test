@@ -24,6 +24,8 @@ class MainPageLocators():
     FOOTER = (By.CSS_SELECTOR, ".ln-footer")
     SITE_MAP_LINK = (By.CSS_SELECTOR, "#link-2")
     SITE_MAP_OPEN = (By.CSS_SELECTOR, "#block-m")
+    SEARCH_BUTTON = (By.CSS_SELECTOR, "button.e-search-but.ico-but.b_sr")
+    SEARCH_FIELD = (By.CSS_SELECTOR, "input[type='text']")
 
 class MainMenuLocators():
     MAIN_MENU_OPENED = (By.CSS_SELECTOR, ".selected.active")
@@ -58,6 +60,8 @@ class RequestPageLocators():
     REQUEST_FORM_ANSWER_ADDRESS_TITLE = (By.CSS_SELECTOR, "#answer_type_check")
     REQUEST_FORM_EMAIL_ADDRESS = (By.CSS_SELECTOR, "#email_check")
     REQUEST_FORM_TELEPHONE = (By.CSS_SELECTOR, "#phone_check")
-    REQUEST_FORM_LOCATION = (By.CSS_SELECTOR, "#select2-event_region-nu-container")
+    REQUEST_FORM_LOCATION = (By.CSS_SELECTOR, ".select2.select2-container.select2-container--default")
 
-
+class SearchPageLocators():
+    SEARCH_RESULT_FILE = (By.XPATH, '//a[contains(@href, "Almanah_Professional")]')
+    SEARCH_RESULT_ARTICLE = (By.CSS_SELECTOR, ".search_highlight")

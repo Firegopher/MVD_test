@@ -4,9 +4,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from .locators import MainPageLocators
 from .locators import MainMenuLocators
+import time
 
 class BasePage():
-    def __init__(self, browser, url, timeout=3):
+    def __init__(self, browser, url, timeout=7):
         self.browser = browser
         self.url = url
         self.browser.implicitly_wait(timeout)
@@ -62,3 +63,12 @@ class BasePage():
         except TimeoutException:
             return True
         return False
+
+    def open_search_field(self):
+        self.browser.find_element(*MainPageLocators.SEARCH_BUTTON).click()
+
+    def fill_search_field(self):
+        time.sleep(1)
+        self.browser.find_element(*MainPageLocators.SEARCH_FIELD).send_keys("акт")
+        self.browser.find_element(*MainPageLocators.SEARCH_BUTTON).click()
+
