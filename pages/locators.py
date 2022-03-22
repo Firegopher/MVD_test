@@ -74,3 +74,11 @@ class WantedPageLocators():
     SEARCH_BUTTON = (By.CSS_SELECTOR, "button.type-1.search-attention")
     CAPTCHA_FIELD = (By.CSS_SELECTOR, "input[name='captcha']")
     WANTED_SEARCH_RESULT = (By.CSS_SELECTOR, ".bs-item.clearfix .bs-item-title")
+
+class DistrictPageLocators():
+    YANDEX_MAP_GEOLOCATION_BUTTON = (By.CSS_SELECTOR, ".ymaps-2-1-79-float-button-icon.ymaps-2-1-79-float-button-icon_icon_geolocation")
+    FIND_BY_ADDRESS_INSET = (By.CSS_SELECTOR, "#search-form-pill")
+    SUBJECT_RF = (By.CSS_SELECTOR, "select.subject.select.select2-hidden-accessible")
+    STREET = (By.CSS_SELECTOR, ".street.select.select2-hidden-accessible")
+    SEARCH_BUTTON = (By.CSS_SELECTOR, "#form-1 .blue-button.search")
+    SEARCH_RESULT = (By.XPATH, '//*[@id="district_list"]/div[1]/div/div/div[2]/ul/li[3]')

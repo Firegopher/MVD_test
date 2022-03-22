@@ -1,7 +1,6 @@
 from mvd.pages.all_media_page import AllMediaPage
 import pytest
 
-
 @pytest.mark.saniti
 def test_radio(browser):
     link = "https://66.xn--b1aew.xn--p1ai/all_media"
